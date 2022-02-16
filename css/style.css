@@ -1,0 +1,158 @@
+html{
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::after,
+  *::before{
+    box-sizing: inherit;
+  }
+  
+  ul[class],
+  ol[class] {
+    padding: 0;
+  }
+  
+  
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol,
+  li,
+  figure,
+  figcaption,
+  blockquote,
+  dl,
+  dd {
+    margin: 0;
+    font-size: inherit;
+  }
+  
+  ul[class] {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+
+  .shultes {
+      padding-top: 10px;
+
+  }
+  .container {
+      max-width: 1200px;
+      padding: 0 10px;
+      margin:  0 auto;
+  }
+  .shultes__title{
+      text-align: center;
+      text-transform: uppercase;
+  }
+  .shultes__btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+  }
+
+  .shultes__btn button {
+      margin-left: 10px;
+  }
+  .shultes__number {
+      text-align: center;
+      margin-top: 25px;
+  }
+  .shultes__number span{
+      color: blue;
+      font-weight: 700;
+      font-size: 20px;
+  }
+
+  .shultes__game {
+      margin-top: 10px;
+  }
+
+  .shultes__games-inner {
+      display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+ 
+
+
+  }
+  .shultes__games-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid green;
+      flex-basis: calc(20%);
+      font-size: 25px;
+      min-height: 55px;
+      cursor: pointer;
+  }
+  .shultes__games-item:hover {
+    background: rgb(33 199 122 / 50%) !important;
+  }
+  .shultes__size-inner {
+      display: flex;
+      margin-top: 10px;
+      justify-content: center;
+      align-items: center;
+  }
+  .shultes__size-item + .shultes__size-item {
+    margin-left: 10px;
+  }
+  .shultes__size-item {
+      font-size: 18px;
+      border: 1px solid green;
+      padding: 5px;
+      border-radius: 2px;
+      cursor: pointer;
+  }
+  .shultes__size-item:hover {
+    border-color: red;
+  }
+  .shultes__number {
+      display: none;
+  }
+  .shultes__number.active {
+      display: block;
+  }
+
+  @media(max-width: 439px) {
+
+    .shultes__size-item {
+      
+      margin-left: 10px;
+      flex-basis: calc(25% - 10px);
+      margin-bottom: 10px;
+    }
+    .shultes__size-inner {
+      display: flex;
+      margin-top: 10px;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      text-align: center;
+      margin-left: -10px;
+  }
+  }
